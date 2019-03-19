@@ -1,15 +1,15 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:test="http://www.sunce.xin/schema/programmer"
+       xmlns:cf="http://www.sunce.xin/schema/config"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
         http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context-4.3.xsd
-       http://www.sunce.xin/schema/programmer
-        http://www.sunce.xin/schema/programmer.xsd">
+       http://www.sunce.xin/schema/config
+       http://www.sunce.xin/schema/config.xsd">
     <context:component-scan base-package="xin.sunce.spring"/>
 
 
-    <test:programmer age="26" name="sunce" id="test"/>
+    <cf:config id="self" url="http://www.sunce.xin" name="ce.sun"/>
 </beans>

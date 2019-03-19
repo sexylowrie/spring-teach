@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<xsd:schema xmlns="http://www.sunce.xin/schema/programmer"
+<xsd:schema xmlns="http://www.sunce.xin/schema/config"
             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
-            targetNamespace="http://www.sunce.xin/schema/programmer"
+            targetNamespace="http://www.sunce.xin/schema/config"
             elementFormDefault="qualified"
             attributeFormDefault="unqualified">
 
-    <xsd:element name="programmer">
+    <xsd:element name="config">
         <xsd:complexType>
+            <!-- name 定于成员变量名称，type 定义成员变量蕾西 -->
             <xsd:attribute name="id" type="xsd:string"/>
             <xsd:attribute name="name" type="xsd:string"/>
-            <xsd:attribute name="age" type="xsd:int"/>
+            <xsd:attribute name="url" type="xsd:string"/>
         </xsd:complexType>
     </xsd:element>
-
 
 </xsd:schema>

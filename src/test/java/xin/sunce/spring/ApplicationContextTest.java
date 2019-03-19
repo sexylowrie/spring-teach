@@ -4,7 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import xin.sunce.spring.namespace.Programmer;
+import xin.sunce.spring.namespace.Config;
 
 /**
  * 测试类
@@ -25,7 +25,7 @@ public class ApplicationContextTest {
 
     @Test
     public void testNameSpace() {
-        Programmer programmer = (Programmer) applicationContext.getBean("test");
-        System.out.println(programmer.toString());
+        Config config = (Config) applicationContext.getBean(Config.class);
+        System.out.println(config.toString());
     }
 }

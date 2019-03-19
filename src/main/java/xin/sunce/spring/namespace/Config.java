@@ -6,11 +6,11 @@ import java.util.StringJoiner;
  * @author lowrie
  * @date 2019-03-19
  */
-public class Programmer {
+public class Config {
 
     private String id;
     private String name;
-    private int age;
+    private String url;
 
     public String getId() {
         return id;
@@ -28,20 +28,20 @@ public class Programmer {
         this.name = name;
     }
 
-    public int getAge() {
-        return age;
+    public String getUrl() {
+        return url;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setUrl(String url) {
+        this.url = url;
     }
 
     @Override
     public String toString() {
-        return new StringJoiner(", ", Programmer.class.getSimpleName() + "[", "]")
+        return new StringJoiner(", ", Config.class.getSimpleName() + "[", "]")
                 .add("id='" + id + "'")
                 .add("name='" + name + "'")
-                .add("age=" + age)
+                .add("url='" + url + "'")
                 .toString();
     }
 }

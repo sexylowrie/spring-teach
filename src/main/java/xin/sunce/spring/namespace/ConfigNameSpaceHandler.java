@@ -6,10 +6,10 @@ import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
  * @author lowrie
  * @date 2019-03-19
  */
-public class ProgrammerNameSpaceHolder extends NamespaceHandlerSupport {
+public class ConfigNameSpaceHandler extends NamespaceHandlerSupport {
 
     @Override
     public void init() {
-        registerBeanDefinitionParser("programmer", new ProgrammerBeanDefinitionParser());
+        registerBeanDefinitionParser("config", new ConfigBeanDefinitionParser());
     }
 }

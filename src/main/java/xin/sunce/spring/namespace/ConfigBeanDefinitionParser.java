@@ -9,24 +9,29 @@ import org.w3c.dom.Element;
  * @author lowrie
  * @date 2019-03-19
  */
-public class ProgrammerBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
+public class ConfigBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
 
     @Override
     protected Class<?> getBeanClass(Element element) {
-        return Programmer.class;
+        return Config.class;
     }
 
     @Override
     protected void doParse(Element element, BeanDefinitionBuilder builder) {
         String id = element.getAttribute("id");
-        Integer age = Integer.parseInt(element.getAttribute("age"));
         String name = element.getAttribute("name");
+        String url = element.getAttribute("url");
         if (StringUtils.hasText(id)) {
             builder.addPropertyValue("id", id);
         }
         if (StringUtils.hasText(name)) {
             builder.addPropertyValue("name", name);
         }
-        builder.addPropertyValue("age", age);
+        if (StringUtils.hasText(name)) {
+            builder.addPropertyValue("name", name);
+        }
+        if (StringUtils.hasText(url)) {
+            builder.addPropertyValue("url", url);
+        }
     }
 }

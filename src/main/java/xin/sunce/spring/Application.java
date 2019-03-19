@@ -1,7 +1,7 @@
 package xin.sunce.spring;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import xin.sunce.spring.namespace.Programmer;
+import xin.sunce.spring.namespace.Config;
 
 /**
  * @author lowrie
@@ -12,7 +12,7 @@ public class Application {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Programmer programmer = (Programmer) applicationContext.getBean("test");
+        Config programmer = (Config) applicationContext.getBean("user");
         System.out.println(programmer.toString());
     }
 }
