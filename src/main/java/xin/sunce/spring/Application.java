@@ -12,7 +12,7 @@ public class Application {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Config programmer = (Config) applicationContext.getBean("user");
+        Config programmer = (Config) applicationContext.getBean(Config.class);
         System.out.println(programmer.toString());
     }
 }

@@ -368,6 +368,7 @@ public class ConfigNameSpaceHandler extends NamespaceHandlerSupport {
 }
 ```
 
+
 接下来是使用阶段的分析，我们先看看BeanDefinition的处理逻辑
 
 ![XMLBeanDefinitionReader.png](./images/XMLBeanDefinitionReader.png)
