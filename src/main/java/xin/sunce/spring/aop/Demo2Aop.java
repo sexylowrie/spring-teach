@@ -11,14 +11,13 @@ import org.springframework.stereotype.Component;
  * @date 2019-03-16
  */
 @Aspect
-@Order(Ordered.HIGHEST_PRECEDENCE)
+@Order(Ordered.HIGHEST_PRECEDENCE + 100)
 @Component
-public class DemoAop extends AbstractAop {
+public class Demo2Aop extends AbstractAop {
 
     @Pointcut("execution(public * xin.sunce.spring.service.TestService.getResult())")
     @Override
     public void pointCut() {
 
     }
-
 }

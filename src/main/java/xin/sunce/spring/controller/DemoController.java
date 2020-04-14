@@ -8,7 +8,7 @@ import xin.sunce.spring.namespace.Config;
 
 import javax.annotation.Resource;
 
-@Controller
+//@Controller
 public class DemoController {
 
     @Resource
